@@ -3,7 +3,7 @@ const Engineer = require('../lib/Engineer');
 // jest.mock('../lib/engineer')
 
 test('Get engineer information based off inquirer prompts', () =>{
-    const engineer = new Engineer('Lexie', 4325,'lex@gmail.com','lexcraw4d','Engineer')
+    const engineer = new Engineer('Dan', 8989,'dan@mail.com','danpgolden','Engineer')
 
     expect(engineer.name).toEqual(expect.any(String));
     expect(engineer.id).toEqual(expect.any(Number));

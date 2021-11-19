@@ -3,7 +3,7 @@ const Manager = require('../lib/Manager');
 // jest.mock('../lib/manager')
 
 test('Get manager information based off inquirer prompts', () =>{
-    const manager = new Manager('Lexie', 4325,'lex@gmail.com', 3631977)
+    const manager = new Manager('Dan', 8989,'dan@mail.com', 43)
 
     expect(manager.name).toEqual(expect.any(String));
     expect(manager.id).toEqual(expect.any(Number));

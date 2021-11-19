@@ -143,7 +143,7 @@ function createHtml() {
 	function engrHtml(employee) {
 		return `<!-- Engineer -->
 		
-			<div class="col s4 m4 l4 .center-align grey">
+			<div class="col s4 m4 l4 .center-align">
 				<div class="card center-align">
 				<div class="blue darken-2 white-text">
 			   <div> <h5>${employee.name}</h5></div>
@@ -161,7 +161,7 @@ function createHtml() {
 
 	function intHtml(employee) {
 		return `<!-- Intern -->
-		<div class="col s4 m4 l4 .center-align grey">
+		<div class="col s4 m4 l4 .center-align">
 		<div class="card center-align">
 		<div class="blue darken-2 white-text">
 	   <div> <h5>${employee.name}</h5></div>
@@ -205,7 +205,7 @@ function starterHtml() {
     <title>Team Profile</title>
 </head>
 <body>
-    <div class=".center-align blue"><h2 style="text-align: center;" class="blue">My Team</h2></div>
+    <div class=".center-align blue"><h2 style="text-align: center; color: white" class="indigo"">My Team</h2></div>
 	
 			<div class="row">
 				<!-- START-->

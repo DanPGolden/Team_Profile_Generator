@@ -29,7 +29,7 @@ const initializePrompt = () => {
 		});
 };
 let initializeQuestions = (employeeRole) => {
-	console.log('<------ Adding new employee ------>');
+	console.log('******** Adding employee ********');
 
 	return inquirer
 		.prompt([
@@ -84,7 +84,7 @@ let promptEngineer = (basicInfo, role) => {
 			let engineer = new Engineer(basicInfo.name, basicInfo.id, basicInfo.email, github);
 			employeeGen.push(engineer);
 			initializePrompt();
-			// console.table(engineer);
+			
 		});
 };
 let promptManager = (basicInfo, role) => {
@@ -97,7 +97,6 @@ let promptManager = (basicInfo, role) => {
 		})
 		.then(({ office }) => {
 			let manager = new Manager(basicInfo.name, basicInfo.id, basicInfo.email, office);
-			// console.table(manager);
 			employeeGen.push(manager);
 			initializePrompt();
 		});
@@ -113,12 +112,11 @@ let promptIntern = (basicInfo, role) => {
 		})
 		.then(({ school }) => {
 			let intern = new Intern(basicInfo.name, basicInfo.id, basicInfo.email, school);
-			// console.table(intern);
 			employeeGen.push(intern);
 			initializePrompt();
 		});
 };
-function createHtml() {
+function buildHtml() {
 	const html = [];
 
 	function mngrHtml(employee) {
@@ -177,7 +175,7 @@ function createHtml() {
 
 	for (i = 0; i < employeeGen.length; i++) {
 		let teamMember = employeeGen[i];
-		// console.log(teamMember.getRole());
+		
 		if (teamMember.getRole() === 'Manager') {
 			html.push(mngrHtml(teamMember));
 		} else if (teamMember.getRole() === 'Engineer') {
@@ -198,9 +196,7 @@ function starterHtml() {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>Team Profile</title>
 </head>
@@ -210,7 +206,7 @@ function starterHtml() {
 			<div class="row">
 				<!-- START-->
 	
-				${createHtml()}
+				${buildHtml()}
 				
 				<!-- END-->
 		

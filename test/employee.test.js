@@ -2,7 +2,7 @@ const Employee = require('../lib/Employee');
 
 // jest.mock('../lib/Employee')
 
-test('Get employee information based off inquirer prompts', () =>{
+test('Get info off prompts', () =>{
 
     const employee = new Employee('Dan', 8989,'Dan@mail.com', 'Employee')
 

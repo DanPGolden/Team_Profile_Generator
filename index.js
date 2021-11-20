@@ -204,11 +204,11 @@ function starterHtml() {
     <div class=".center-align blue"><h2 style="text-align: center; color: white" class="indigo"">My Team</h2></div>
 	
 			<div class="row">
-				<!-- START-->
-	
-				${buildHtml()}
 				
-				<!-- END-->
+	
+		${buildHtml()}
+				
+				
 		
 	</body>
 	</html>`;

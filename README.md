@@ -1,6 +1,7 @@
 # Team Profile Generator
 [![npm](https://badge.fury.io/js/inquirer.svg)](http://badge.fury.io/js/inquirer)
 ***
+![Profile Generator Example HTML](example4.png)
 ## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
@@ -24,4 +25,4 @@ If you have any questions about this project or would like to report and issue, 
 https://github.com/DanPGolden/Team_Profile_Generator
 <br>
 ### Video
-
+https://watch.screencastify.com/v/lcOPvy9k9yo7GPB1D5s9
